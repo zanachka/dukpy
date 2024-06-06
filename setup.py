@@ -12,7 +12,7 @@ try:
 except IOError:
     README = ''
 
-INSTALL_REQUIRES = []
+INSTALL_REQUIRES = ["mutf8"]
 if py_version == (2, 6):
     INSTALL_REQUIRES.append('argparse')
 
@@ -32,7 +32,7 @@ repo_url = 'https://github.com/{0}'.format(repo_slug)
 
 setup(
     name=name,
-    version='0.3.1',
+    version='0.4.0',
     description='Simple JavaScript interpreter for Python',
     long_description=README,
     keywords='javascript compiler babeljs jsx coffeescript typescript',
